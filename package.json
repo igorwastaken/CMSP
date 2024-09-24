@@ -1,0 +1,45 @@
+{
+  "name": "cmsp",
+  "version": "0.0.1",
+  "description": "Este projeto foi desenvolvido para os computadores e notebooks das escolas da rede pública do Governo de São Paulo.",
+  "main": "index.js",
+  "scripts": {
+    "build": "electron-builder -p --win",
+    "start": "electron ."
+  },
+  "build": {
+    "appId": "com.alzira.cmsp",
+    "productName": "CMSP",
+    "win": {
+      "publisherName": "Escola Alzira",
+      "publish": [
+        "github"
+      ],
+      "target": [
+        "nsis"
+      ]
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "notigorwastaken",
+        "repo": "cmsp"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notigorwastaken/CMSP-Alzira.git#main"
+  },
+  "author": "Igor Figueiredo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/notigorwastaken/CMSP-Alzira/issues"
+  },
+  "homepage": "https://github.com/notigorwastaken/CMSP-Alzira#readme",
+  "devDependencies": {
+    "electron": "^32.1.2",
+    "electron-builder": "^25.0.5",
+    "electron-updater": "^6.3.4"
+  }
+}
