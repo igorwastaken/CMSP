@@ -1,6 +1,6 @@
 {
   "name": "cmsp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Este projeto foi desenvolvido para os computadores e notebooks das escolas da rede pública do Governo de São Paulo.",
   "main": "index.js",
   "scripts": {
