@@ -7,7 +7,6 @@ on:
 jobs:
   publish_on_win:
     runs-on: windows-latest
-    needs: []
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@master
