@@ -1,5 +1,8 @@
 const { app, BrowserWindow, session } = require("electron/main");
 const { autoUpdater } = require("electron-updater");
+const log = require('electron-log');
+autoUpdater.logger = log;
+autoUpdater.logger.transports.file.level = 'info';
 
 let win;
 function createWindow() {
@@ -10,6 +13,7 @@ function createWindow() {
       session: anon,
       devTools: true
     },
+    icon: "./assets/icon.ico",
     autoHideMenuBar: true
   });
   win.maximize();
@@ -41,13 +45,13 @@ function checkForUpdates() {
     });
   });
 
-  autoUpdater.on("update-not-available", () => {
+  /*autoUpdater.on("update-not-available", () => {
     dialog.showMessageBox({
       type: "info",
       title: "Nenhuma atualização disponível",
       message: "Você já está usando a versão mais recente.",
     });
-  });
+  });*/
 
   autoUpdater.on("error", (err) => {
     dialog.showErrorBox(

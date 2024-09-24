@@ -1,7 +1,7 @@
 {
   "name": "cmsp",
-  "version": "1.0.1",
-  "description": "Este projeto foi desenvolvido para os computadores e notebooks das escolas da rede pública do Governo de São Paulo.",
+  "version": "1.0.2",
+  "description": "Centro de Mídias de São Paulo",
   "main": "index.js",
   "scripts": {
     "build": "electron-builder -p onTag --win portable",
@@ -54,6 +54,7 @@
     "prettier": "3.3.3"
   },
   "dependencies": {
+    "electron-log": "^5.2.0",
     "electron-updater": "^6.3.4"
   }
 }
