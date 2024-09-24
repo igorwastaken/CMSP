@@ -9,9 +9,11 @@ O aplicativo oferece uma alternativa ao uso do navegador Chrome para acessar o C
 ## Perguntas Frequentes
 
 ### Por que foi criado?
+
 O aplicativo foi criado especificamente para a minha escola, com o objetivo de resolver problemas recorrentes, como o uso indevido de contas de terceiros para acessar plataformas educacionais e realizar atividades. A ideia é minimizar esses incidentes, oferecendo uma solução mais segura e prática.
 
 ### Quais são as principais limitações e recursos?
+
 - **Modo anônimo ativado**: Garante que os alunos possam usar o computador sem que suas contas sejam salvas ou acessadas por outros.
 - **CMSP em formato de aplicativo**: O CMSP continua acessível, porém, com a simplicidade de um app dedicado.
 - **Compatibilidade limitada**: Algumas plataformas ou recursos podem não funcionar corretamente devido às restrições do navegador embutido.
