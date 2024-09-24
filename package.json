@@ -34,20 +34,20 @@
       {
         "provider": "github",
         "owner": "notigorwastaken",
-        "repo": "cmsp"
+        "repo": "CMSP"
       }
     ]
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/notigorwastaken/CMSP-Alzira.git#main"
+    "url": "git+https://github.com/notigorwastaken/CMSP.git#main"
   },
   "author": "Igor Figueiredo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/notigorwastaken/CMSP-Alzira/issues"
+    "url": "https://github.com/notigorwastaken/CMSP/issues"
   },
-  "homepage": "https://github.com/notigorwastaken/CMSP-Alzira#readme",
+  "homepage": "https://github.com/notigorwastaken/CMSP#readme",
   "devDependencies": {
     "electron": "^32.1.2",
     "electron-builder": "^25.0.5",
