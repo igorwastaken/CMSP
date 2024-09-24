@@ -6,7 +6,7 @@
   "scripts": {
     "build": "electron-builder -p onTag --win portable",
     "start": "electron .",
-    "publish": "electron-builder publish",
+    "publish": "electron-builder --publish always --win portable",
     "fix": "prettier . --write",
     "lint": "prettier . --check"
   },
