@@ -7,7 +7,7 @@ on:
 jobs:
   build_on_win:
     runs-on: windows-latest
-    needs: [lint]
+    needs: []
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@master
@@ -28,7 +28,7 @@ jobs:
         run: npm run lint
   publish_on_win:
     runs-on: windows-latest
-    needs: [lint]
+    needs: []
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@master
