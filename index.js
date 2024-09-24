@@ -8,9 +8,12 @@ function createWindow() {
   win = new BrowserWindow({
     webPreferences: {
       session: anon,
+      devTools: true
     },
+    autoHideMenuBar: true
   });
   win.maximize();
+  win.setMenu(null);
   win.loadURL("http://cmspweb.ip.tv");
   win.on("closed", () => {
     win = null;
