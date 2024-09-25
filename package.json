@@ -1,9 +1,10 @@
 {
   "name": "cmsp",
   "productName": "CMSP",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "My Electron application description",
   "main": "src/index.js",
+  "author": "Igor Figueiredo",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
@@ -13,10 +14,12 @@
     "lint": "echo \"No linting configured\""
   },
   "keywords": [],
-  "author": "codespace",
   "license": "MIT",
   "config": {
     "forge": {
+      "packagerConfig": {
+        "icon": "assets/icons/icon"
+      },
       "make_targets": {
         "win32": [
           "squirrel"
