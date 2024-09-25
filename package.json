@@ -1,60 +1,61 @@
 {
   "name": "cmsp",
-  "version": "1.0.2",
-  "description": "Centro de Mídias de São Paulo",
-  "main": "index.js",
+  "productName": "CMSP",
+  "version": "1.2.0",
+  "description": "My Electron application description",
+  "main": "src/index.js",
   "scripts": {
-    "build": "electron-builder -p onTag --win portable",
-    "start": "electron .",
-    "publish": "electron-builder -p onTag --win portable",
-    "fix": "prettier . --write",
-    "lint": "prettier . --check"
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "all": "npm run package && npm run make && npm run publish",
+    "lint": "echo \"No linting configured\""
   },
-  "build": {
-    "appId": "com.alzira.cmsp",
-    "productName": "CMSP",
-    "win": {
-      "publisherName": "Escola Alzira",
-      "publish": [
-        "github"
-      ],
-      "target": [
-        "nsis"
-      ]
-    },
-    "nsis": {
-      "oneClick": false,
-      "perMachine": false,
-      "allowToChangeInstallationDirectory": true,
-      "installerIcon": "assets/icon.ico",
-      "createDesktopShortcut": true,
-      "createStartMenuShortcut": true
-    },
-    "publish": [
-      {
-        "provider": "github",
-        "owner": "notigorwastaken",
-        "repo": "CMSP"
-      }
-    ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/notigorwastaken/CMSP.git#main"
-  },
-  "author": "Igor Figueiredo",
+  "keywords": [],
+  "author": "codespace",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/notigorwastaken/CMSP/issues"
-  },
-  "homepage": "https://github.com/notigorwastaken/CMSP#readme",
-  "devDependencies": {
-    "electron": "^32.1.2",
-    "electron-builder": "^25.0.5",
-    "prettier": "3.3.3"
+  "config": {
+    "forge": {
+      "make_targets": {
+        "win32": [
+          "squirrel"
+        ],
+        "darwin": [
+          "zip"
+        ],
+        "linux": [
+          "deb",
+          "rpm"
+        ]
+      },
+      "electronPackagerConfig": {
+        "packageManager": "yarn"
+      },
+      "electronWinstallerConfig": {
+        "name": "CMSP"
+      },
+      "electronInstallerDebian": {},
+      "electronInstallerRedhat": {},
+      "github_repository": {
+        "owner": "notigorwastaken",
+        "name": "cmsp"
+      },
+      "windowsStoreConfig": {
+        "packageName": "CMSP",
+        "name": "CMSP"
+      }
+    }
   },
   "dependencies": {
-    "electron-log": "^5.2.0",
-    "electron-updater": "^6.3.4"
+    "electron-compile": "^6.4.4",
+    "electron-squirrel-startup": "^1.0.1"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "electron-forge": "^5.2.4",
+    "electron-prebuilt-compile": "8.2.0"
   }
 }
