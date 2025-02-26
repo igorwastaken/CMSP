@@ -1,6 +1,6 @@
 {
-  "name": "cmsp",
-  "productName": "CMSP",
+  "name": "saladofuturo",
+  "productName": "Sala do Futuro",
   "version": "1.2.1",
   "description": "My Electron application description",
   "main": "src/index.js",
@@ -36,7 +36,7 @@
         "packageManager": "yarn"
       },
       "electronWinstallerConfig": {
-        "name": "CMSP"
+        "name": "Sala do Futuro"
       },
       "electronInstallerDebian": {},
       "electronInstallerRedhat": {},
@@ -45,8 +45,8 @@
         "name": "cmsp"
       },
       "windowsStoreConfig": {
-        "packageName": "CMSP",
-        "name": "CMSP"
+        "packageName": "saladofuturo",
+        "name": "Sala do Futuro"
       }
     }
   },

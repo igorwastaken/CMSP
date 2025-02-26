@@ -24,7 +24,7 @@ const createWindow = () => {
     autoHideMenuBar: true
   });
 
-  mainWindow.loadURL("http://cmspweb.ip.tv/");
+  mainWindow.loadURL("http://saladofuturo.educacao.sp.gov.br/");
   if(mainWindow.isMaximizable()) mainWindow.maximize();
 
   // Emitted when the window is closed.
