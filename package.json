@@ -1,7 +1,7 @@
 {
   "name": "saladofuturo",
   "productName": "Sala do Futuro",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "My Electron application description",
   "main": "src/index.js",
   "author": "Igor Figueiredo",
